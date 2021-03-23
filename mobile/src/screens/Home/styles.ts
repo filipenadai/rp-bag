@@ -24,10 +24,11 @@ export const Header = styled.View`
   height: 10%;
 `;
 
-export const BagButton = styled(RectButton)`
+export const Button = styled(RectButton)`
   justify-content: center;
+  margin: 8px 0;
   align-items: center;
-  background-color: #9d2053;
+  background-color: #4d4d4d;
 
   width: 100%;
   height: 56px;
