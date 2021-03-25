@@ -1,21 +1,39 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/Feather';
 import Home from '../screens/Home';
-import ListItem from '../screens/ListItems';
-import CreateItem from '../screens/CreateItem';
 
-const Stack = createStackNavigator();
+import StackItems from './items.routes';
 
-const StackNavigator: React.FC = () => (
-  <Stack.Navigator
-    screenOptions={{
-      headerShown: false,
+const Tab = createBottomTabNavigator();
+
+const TabNavigator: React.FC = () => (
+  <Tab.Navigator
+    tabBarOptions={{
+      showLabel: false,
+      style: {
+        backgroundColor: '#4d4d4d',
+        borderTopWidth: 0,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
     }}
   >
-    <Stack.Screen name="Home" component={Home} />
-    <Stack.Screen name="ListItems" component={ListItem} />
-    <Stack.Screen name="CreateItem" component={CreateItem} />
-  </Stack.Navigator>
+    <Tab.Screen
+      options={{
+        tabBarIcon: () => <Icon name="home" size={32} color="#fdfdfd" />,
+      }}
+      name="Home"
+      component={Home}
+    />
+    <Tab.Screen
+      options={{
+        tabBarIcon: () => <Icon name="box" size={32} color="#fdfdfd" />,
+      }}
+      name="ListItems"
+      component={StackItems}
+    />
+  </Tab.Navigator>
 );
 
-export default StackNavigator;
+export default TabNavigator;

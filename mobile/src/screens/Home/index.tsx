@@ -26,20 +26,7 @@ const Home: React.FC = () => {
       <Header>
         <UserName>Filipe Nadai</UserName>
       </Header>
-      <Content>
-        <Button>
-          <BagButtonText>Open Bag</BagButtonText>
-        </Button>
-        <Button onPress={handleNavigateToCreateItem}>
-          <BagButtonText>Create item</BagButtonText>
-        </Button>
-        <Button>
-          <BagButtonText>Place item</BagButtonText>
-        </Button>
-        <Button onPress={handleNavigateToListItems}>
-          <BagButtonText>List items</BagButtonText>
-        </Button>
-      </Content>
+      <Content />
     </Container>
   );
 };

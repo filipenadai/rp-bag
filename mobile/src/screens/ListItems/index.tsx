@@ -75,9 +75,6 @@ const ListItem: React.FC = () => {
   return (
     <Container edges={['top']}>
       <Header>
-        <HeaderButton onPress={goBack}>
-          <Icon name="arrow-left" size={24} color="#3c3c3c" />
-        </HeaderButton>
         <HeaderButton onPress={handleNavigateToCreate}>
           <Icon name="plus" size={24} color="#3c3c3c" />
         </HeaderButton>
