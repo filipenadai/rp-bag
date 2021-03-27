@@ -11,6 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		810092A9260E94D9000C1DB1 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810092A5260E94D9000C1DB1 /* Rubik-SemiBold.ttf */; };
+		810092AA260E94D9000C1DB1 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810092A6260E94D9000C1DB1 /* Rubik-Bold.ttf */; };
+		810092AB260E94D9000C1DB1 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810092A7260E94D9000C1DB1 /* Rubik-Regular.ttf */; };
+		810092AC260E94D9000C1DB1 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810092A8260E94D9000C1DB1 /* Rubik-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8FE19BDB10AAEF5C7A203ACB /* libPods-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2465856D4679C7273EEE838 /* libPods-mobile.a */; };
 		F8A23B22623E856329D89F1E /* libPods-mobile-mobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4572459EF5F1F67E2CB2EE /* libPods-mobile-mobileTests.a */; };
@@ -39,6 +43,10 @@
 		3676FADB72E74CD4DB5030AD /* Pods-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile.debug.xcconfig"; path = "Target Support Files/Pods-mobile/Pods-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		3B4572459EF5F1F67E2CB2EE /* libPods-mobile-mobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile-mobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6457F4D9D1C3546EAB791C49 /* Pods-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile.release.xcconfig"; path = "Target Support Files/Pods-mobile/Pods-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		810092A5260E94D9000C1DB1 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		810092A6260E94D9000C1DB1 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Bold.ttf"; path = "../assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		810092A7260E94D9000C1DB1 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		810092A8260E94D9000C1DB1 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = mobile/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA1DE5F21E815CA715F9589 /* Pods-mobile-mobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-mobileTests.release.xcconfig"; path = "Target Support Files/Pods-mobile-mobileTests/Pods-mobile-mobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2465856D4679C7273EEE838 /* libPods-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +99,6 @@
 				E86746D8D1F29F9748A792CD /* Pods-mobile-mobileTests.debug.xcconfig */,
 				BBA1DE5F21E815CA715F9589 /* Pods-mobile-mobileTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,10 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				810092A6260E94D9000C1DB1 /* Rubik-Bold.ttf */,
+				810092A8260E94D9000C1DB1 /* Rubik-Medium.ttf */,
+				810092A7260E94D9000C1DB1 /* Rubik-Regular.ttf */,
+				810092A5260E94D9000C1DB1 /* Rubik-SemiBold.ttf */,
 				13B07FAE1A68108700A75B9A /* mobile */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mobileTests */,
@@ -243,6 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				810092A9260E94D9000C1DB1 /* Rubik-SemiBold.ttf in Resources */,
+				810092AA260E94D9000C1DB1 /* Rubik-Bold.ttf in Resources */,
+				810092AB260E94D9000C1DB1 /* Rubik-Regular.ttf in Resources */,
+				810092AC260E94D9000C1DB1 /* Rubik-Medium.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

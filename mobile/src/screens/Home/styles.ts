@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 import { RectButton } from 'react-native-gesture-handler';
 
-export const Container = styled(SafeAreaView)`
+export const Container = styled.SafeAreaView`
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -21,7 +20,7 @@ export const Content = styled.View`
 export const Header = styled.View`
   justify-content: center;
   align-items: center;
-  height: 10%;
+  margin-top: 16px;
 `;
 
 export const Button = styled(RectButton)`
@@ -43,4 +42,12 @@ export const BagButtonText = styled.Text`
 export const UserName = styled.Text`
   font-size: 24px;
   color: #fff;
+  font-family: 'Rubik-Bold';
+`;
+
+export const UserImage = styled.Image`
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 8px 0;
 `;

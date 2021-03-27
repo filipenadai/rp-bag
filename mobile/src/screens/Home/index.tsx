@@ -8,6 +8,7 @@ import {
   Content,
   Header,
   UserName,
+  UserImage,
 } from './styles';
 
 const Home: React.FC = () => {
@@ -24,6 +25,11 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Header>
+        <UserImage
+          source={{
+            uri: 'https://avatars.githubusercontent.com/u/48576140?v=4',
+          }}
+        />
         <UserName>Filipe Nadai</UserName>
       </Header>
       <Content />
