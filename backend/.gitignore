@@ -1,0 +1,8 @@
+api/.env
+.vscode
+!*api/node_modules/.keep
+api/node_modules/*
+api/package-lock.json
+api/yarn.lock
+api/build/*
+.DS_Store
