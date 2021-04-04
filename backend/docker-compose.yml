@@ -1,59 +1,31 @@
-version: "3"
-services:
-  web:
-    build:
-      dockerfile: ./docker.Dockerfile
-      context: .
-    image: filipenadai/rp-bag
-    container_name: rp-bag
-    ports:
-      - "3000:3000"
-    command: npm run dev
-    env_file:
-      - ./api/.env
-    networks:
-      - rp-bag-network
-    depends_on:
-      - pg
-      - pg-test
-    links:
-      - pg
-      - pg-test
-    volumes:
-      - ./api:/var/www
-      - /var/www/node_modules
-    restart: always
+version: "3.7"
 
-  pg:
+services:
+  rp_bag_db:
     image: postgres
-    container_name: rp-bag-pg
-    volumes:
-      - ./pg/:/var/lib/pg
+    container_name: rp_bag_db
+    restart: always
     ports:
       - 5432:5432
-    networks:
-      - rp-bag-network
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=rp-bag
-    restart: always
-
-  pg-test:
-    image: postgres
-    container_name: rp-bag-pg-test
+      - POSTGRES_DB=rp_bag
     volumes:
-      - /var/lib/pg
+      - pgdata:/data/postgres
+  app:
+    build: .
+    container_name: rp_bag
     ports:
-      - 5433:5432
-    networks:
-      - rp-bag-network
-    environment:
-      - POSTGRES_USER=docker
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=rp-bag-test
-    restart: always
+      - 3001:3001
+      - 9229:9229
+    volumes:
+      - .:/usr/app
+    links:
+      - rp_bag_db
+    depends_on:
+      - rp_bag_db
 
-networks:
-  rp-bag-network:
-    driver: bridge
+volumes:
+  pgdata:
+    driver: local
